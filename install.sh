@@ -1,5 +1,5 @@
 # install nix
-curl -L https://nixos.org/nix/install | sh
+sudo curl -L https://nixos.org/nix/install | sh
 
 # source nix
 . ~/.nix-profile/etc/profile.d/nix.sh
@@ -40,3 +40,7 @@ nvim --headless +PlugInstall +qall
 
 # Use kitty terminal on MacOS
 [ `uname -s` = 'Darwin' ] && stow kitty
+
+# Make the Lunarvim run time
+make -C $LUNARVIM_RUNTIME_DIR ~/.config/nvim/plugged/telescope-fzf-native.nvim
+

@@ -62,7 +62,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 call plug#end()
 
-lua require('jakewies')
+lua require('aljagne')
 
 
 " --- Colors

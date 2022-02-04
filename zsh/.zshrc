@@ -16,6 +16,17 @@ source ${HOME}/.zsh_plugins.sh
 alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
 # Better 'ls' in MacOS
 alias ls='ls -al'
+## other aliases
+alias zshrc='nvim ~/.zshrc';
+alias topten="history | commands | sort -rn | head";
+alias myip="curl http://ipecho.net/plain; echo";
+alias usage='du -h -d1';
+alias update="source ~/.zshrc";
+alias sshdir="cd ~/.ssh";
+alias runp="lsof -i ";
+alias md="mkdir ";
+alias ..='cd ..';
+alias ...='cd ../..';
 # List out all globally installed npm packages
 alias list-npm-globals='npm list -g --depth=0'
 # Adds better handling for `rm` using trash-cli
@@ -27,6 +38,26 @@ alias rm='trash'
 alias vim='nvim'
 # checkout branch using fzf
 alias gcob='git branch | fzf | xargs git checkout'
+## git aliases
+alias gc="git checkout ";
+alias gcm="git checkout master";
+alias gs="git status";
+alias gpull="git pull";
+alias gf="git fetch";
+alias gfa="git fetch --all";
+alias gf="git fetch origin";
+alias gpush="git push";
+alias gpushf="git push -f";
+alias gd="git diff";
+alias ga="git add .";
+alias glog="git log";
+alias gb="git branch";
+alias gbr="git branch remote"
+alias gfr="git remote update"
+alias gbn="git checkout -B "
+alias grf="git reflog";
+alias grh="git reset HEAD~" # last commit
+alias gac="git add . && git commit -a -m "
 # open vim config from anywhere
 alias vimrc='vim ${HOME}/.config/nvim/init.vim'
 # cat -> bat
