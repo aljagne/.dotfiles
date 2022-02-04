@@ -1,0 +1,8 @@
+require('aljagne.gitsigns')
+require('aljagne.lualine')
+require('aljagne.lsp')
+require('aljagne.telescope')
+require('aljagne.treesitter')
+require('aljagne.tokyonight')
+require('aljagne.nvim-tree')
+require('aljagne.bufferline')
