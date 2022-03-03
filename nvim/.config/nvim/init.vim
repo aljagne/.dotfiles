@@ -42,6 +42,11 @@ Plug 'akinsho/bufferline.nvim'                     " Buffers
 Plug 'machakann/vim-highlightedyank'               " Highlight yanked text
 Plug 'kyazdani42/nvim-tree.lua'                    " File explorer
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " Color scheme
+Plug 'rebelot/kanagawa.nvim'                       " Color scheme
+Plug 'turbio/bracey.vim'                           "live previewe
+Plug 'glepnir/dashboard-nvim'                      "Darshbaord
+Plug 'liuchengxu/vim-clap'                         "Finder
+Plug 'preservim/tagbar'                            " Tagbar navigation
 " Lsp
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
@@ -68,11 +73,17 @@ lua require('aljagne')
 " --- Colors
 
 set background=dark
-colorscheme tokyonight
+colorscheme tokyonight  "kanagawa
 
 
 " --- Remaps
 
+nnoremap <C-f> :NvimTreeFocus<CR>
+nnoremap <C-n> :NvimTreeClose<CR>
+nnoremap <C-t> :NvimTreeToggle<CR>
+"" --- nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+
+nmap <F8> :TagbarToggle<CR>
 nnoremap <leader>h :wincmd h<Cr>
 nnoremap <leader>j :wincmd j<Cr>
 nnoremap <leader>k :wincmd k<Cr>
@@ -81,6 +92,9 @@ nnoremap <silent><leader>[ :BufferLineCyclePrev<Cr>
 nnoremap <silent><leader>] :BufferLineCycleNext<Cr>
 nnoremap <silent><leader>q :bdelete<Cr>
 
+
+"" --- Tagbar 
+"--g:tagbar_ctags_bin
 
 " --- Autocommands
 

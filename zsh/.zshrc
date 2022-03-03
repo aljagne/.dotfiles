@@ -73,6 +73,7 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
 # export PATH=${PATH}:${HOME}/go/bin
+export PATH=$PATH:/home/dabis/.nvm/versions/node/v16.13.2/bin/npm
 
 export BAT_THEME="gruvbox-dark"
 
